@@ -1,0 +1,33 @@
+@(products: Seq[models.Product])
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>productId</th>
+                    <th>productCategory</th>
+                    <th>availability</th>
+                    <th>colour</th>
+                    <th>size</th>
+                </tr>
+            </thead>
+            @for(product <- products) {
+            <tr>
+                <td>@product.productId</td>
+                <td>@product.productCategory</td>
+                <td>@product.availability</td>
+                <td>@product.colour</td>
+                <td>@product.size</td>
+            </tr>
+            }
+        </table>
+    </div>
+
+</body>
+</html>

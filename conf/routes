@@ -6,9 +6,9 @@
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
 
-GET     /listProducts               controllers.HomeController.listProducts
+GET     /productListing               controllers.HomeController.productListing
 
-GET     /listProducts/:count        controllers.HomeController.listSpecificProducts(count: String)
+GET     /productListing/:count        controllers.HomeController.productSpecificListing(count: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
